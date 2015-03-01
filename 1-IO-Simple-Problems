@@ -1,5 +1,37 @@
+=================== Task 1 ========================
 first_name = input("Моля, въведете вашето име")
 middle_name = input ("Моля, въведете вашето презиме")
 third_name = input ("Моля, въведете вашето фамилно име")
 
 print (first_name + " " + middle_name + " " + third_name)
+
+=================== Task 2 ========================
+from random import randint
+
+n = input ("Моля, въведете число")
+n = int(n)
+
+dice = randint (1, n)
+
+print (dice)
+
+================== Task 3 ========================
+from random import randint
+
+n = input ("Моля, въведете число")
+n = int(n)
+
+dice1 = randint (1, n)
+print ("Първо хвърляне:")
+print (dice1)
+
+dice2 = randint (1, n)
+print ("Второ хвърляне:")
+print (dice2)
+
+dice3 = randint (1, n)
+print ("Трето хвърляне:")
+print (dice3)
+
+print ("Сумата от трите хвърляния е:")
+print (dice1 + dice2 + dice3)
