@@ -1,0 +1,86 @@
+======================= Task 1 =======================
+age = input ("На колко години сте?")
+age = int(age)
+
+if age >= 21:
+    print ("Вие сте легален!")
+else:
+    print ("Вие сте нелегален!")
+    
+======================= Task 2 =======================
+from random import randint
+
+n = input ("Моля, въведете число: ")
+n = int(n)
+
+name1 = input ("Играч 1, въведете вашето име: ")
+name2 = input ("Играч 2, въведете вашето име: ")
+
+dice1 = randint (1, n)
+print (name1 + " " + "изтегли" + " " + str(dice1))
+dice2 = randint (1, n)
+print (name2 + " " + "изтегли" + " " + str(dice2))
+
+if dice1 > dice2:
+    print (name1 + " " + "печели")
+elif dice1 < dice2:
+    print (name2 + " " + "печели")
+else:
+    print ("Резултатът е равен!")
+    
+==================== Task 3 =========================
+a = input ("Моля, въведете първото число: ")
+a = int(a)
+b = input ("Моля, въведете второто число: ")
+b = int(b)
+c = input ("Моля, изберете една от следните операции: +, -, *, / : ")
+
+if c == "+":
+    result = a + b
+    print (result)
+elif c == "-":
+    result = a - b
+    print (result)
+elif c == "*":
+    result = a * b
+    print (result)
+elif c == "/":
+    result = a / b
+    print (result)
+else:
+    print ("Не поддържаме тази операция!")
+    
+==================== Task 4 =======================
+a = input ("Моля, въведете първото число: ")
+a = int(a)
+
+b = input ("Моля, въведете второто число: ")
+b = int(b)
+
+if a > b:
+    print ("Първото число" + " " + str(a) + " " + "е" + " " + "по-голямо от второто число" + " " + str(b))
+elif b > a:
+    print ("Второто число" + " " + str(b) + " " + "е" + " " + "по-голямо от първото число" + " " + str(a))
+elif a == b:
+    print ("Числата са равни")
+    
+=================== Task 5 =======================
+n = input("Моля, въведете число: ")
+n = int(n)
+
+if n % 2 == 0:
+    print ("Числото" + " " + str(n) + " " + "е" + " " + "четно! ")
+else:
+    print ("Числото" + " " + str(n) + " " + "е" + " " + "нечетно! ") 
+    
+================= Task 6 ========================
+import time
+
+today = time.strftime("%A")
+
+print(today)
+
+if today == "Friday":
+    print ("It is friday :))")
+else:
+    print ("It is not friday :(, today is" + " " + today)
