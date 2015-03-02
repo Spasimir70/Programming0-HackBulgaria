@@ -40,9 +40,67 @@ while first >= second:
     first = first - 1
 
 ======================== Task 3 =========================
+a = input("Моля, въведете число A: ")
+a = int(a)
+
+b = input ("Моля, въведете число Б: ")
+b = int(b)
+
+a1 = a
+
+print ("Брояч на числата от " + str(a) + " до " + str(b))
+
+while a <= b:
+    print (a)
+    a = a + 1
+
+print ("Брояч на числата от " + str(b) + " до " + str(a1))
+
+while b >= a1:
+    print (b)
+    b = b - 1
+
 
 ======================== Task 4 =========================
+first = input("Моля, въведете първото число от интервала: ")
+first = int(first)
+
+last = input("Моля, въведете последното число от интервала: ")
+last = int(last)
+
+while first <= last:
+      first = first + 1
+      number = first
+
+    if number % 2 == 0:
+        print (str(number) + " е четно!")
+    else:
+        print (str(number) + " е нечетно!")
+
+### NOT FINISHED, ERROR MESSAGE
 
 ======================== Task 5 =========================
+first = 1
+last = 60000
+
+while True:
+    if first == last:
+        break
+    first = first + 1
+
+print ("Counting over! Try again later!")
 
 ======================== Task 6 =========================
+n = input("Моля, въведете число: ")
+n = int(n)
+
+total = 0
+first = 1
+
+while first <= n:
+    total += first
+    first += 1
+
+print ("Сумата на числата е: " + str(total))
+
+
