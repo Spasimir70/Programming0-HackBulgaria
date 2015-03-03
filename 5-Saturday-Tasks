@@ -1,0 +1,187 @@
+======================== Task 1 ========================
+n = input("Моля, въведете число: ")
+n = int(n)
+
+start = 1
+end = n
+
+while start <= end:
+    print (start)
+    start = start + 2
+
+======================== Task 2 ========================
+n = input("Моля, въведете число: ")
+n = int(n)
+
+start = 1
+total = 0
+
+while start <= n:
+    if start % 2 == 0:
+        total = start + start
+
+    start = start + 1
+
+print ("Сумата на числата е: " + str(total))
+
+======================== Task 3 ========================
+n = input("Моля, въведете число: ")
+n = int(n)
+
+start = 1
+total = 0
+
+while start <= n:
+    if start % 2 == 1:
+        total = start + start
+
+    start = start + 1
+
+print ("Сумата е: " + str(total))
+
+======================== Task 4 ========================
+n = input("Моля, въведете число за N: ")
+n = int(n)
+
+m = input("Моля, въведете число за M: ")
+m = int(m)
+
+#Начинът на определяне на последната цифра от числото е взет от solutions
+last_digit1 = n % 10
+last_digit2 = m % 10
+
+if last_digit1 > last_digit2:
+    print (n)
+elif last_digit1 < last_digit2:
+    print (m)
+else:
+    if n > m:
+        print(n)
+    else:
+        print(m)
+
+======================== Task 5 ========================
+n = input("Моля, въведете число: ")
+n = int(n)
+
+while n != 0:
+    number = n % 10
+    print(number)
+
+    n = n // 10
+
+======================== Task 6 ========================
+n = input("Моля, въведете число: ")
+n = int(n)
+
+total = 0
+
+while n != 0:
+    number = n % 10
+    total = total + number
+    n = n // 10
+
+print("Сумата е: " + str(total))
+
+======================== Task 7 ========================
+n = input("Моля, въведете долна граница на интервал: ")
+n = int(n)
+
+m = input("Моля, въведете горна граница на интервал: ")
+m = int(m)
+
+lower = 0
+upper = 0
+
+if n < m:
+    lower = n
+    upper = m
+elif m > n:
+    lower = m
+    upper = n
+
+start = lower
+
+while start <= upper:
+    n = start
+    total = 0
+
+    while n != 0:
+        number = n % 10
+        total = total + number
+        n = n // 10
+
+    print("Сумата на: " + str(start) + " е " + str(total))   
+    start = start + 1
+
+======================== Task 8 ========================
+a = input("Моля, въведете първото число: ")
+a = int(a)
+
+b = input("Моля, въведете второто число: ")
+b = int(b)
+
+c = input("Моля, въведете третото число: ")
+c = int(c)
+
+#Алгоритъмът за съставяне на числото от въведените цифри е взет от solution
+number = a * 100 + b * 10 + c
+
+print (number)
+
+
+
+======================== Task 9 ========================
+# Задача 9 не можах да я реша. Пререших я дословно от solutions, затова не я поствам тук.
+
+======================== Task 10 =======================
+n = input("Моля, въведете число: ")
+n = int(n)
+
+reverse = 0
+
+while n != 0:
+    number = n % 10
+
+    reverse = reverse * 10 + number
+
+    n = n // 10
+
+print ("Огледалното число е: " + str(reverse))
+
+======================== Task 11 =======================
+n = input("Моля, въведете число: ")
+n = int(n)
+
+normal = n
+reverse = 0
+
+while n != 0:
+    number = n % 10
+    reverse = reverse * 10 + number
+    n = n // 10
+
+if normal == reverse:
+    print (str(normal) + " е палиндром!")
+else:
+    print (str(normal) + " не е палиндром!")
+
+======================== Task 12 =======================
+# Задача 12 не можах да я реша. Пререших я дословно от solutions, затова не я поствам тук.
+
+
+======================== Task 13 =======================
+n = input("Моля, въведете число: ")
+n = int(n)
+
+start = 1
+result = 1
+
+while start <= n:
+    result = result * start
+    start = start + 1
+
+print (result)
+
+======================== Task 14 =======================
+# Задача 14 ще бъде решена по-късно.
