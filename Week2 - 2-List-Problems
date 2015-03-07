@@ -1,1 +1,196 @@
+============================= Task 1 ================================
+books = ["Learn You a Haskell", 
+         "The Healthy Programmer",
+         "Code Complete",
+         "The Pragmatic Programmer",
+         "Pro Git",
+         "Introduction to Algorithms",
+         "Concrete Mathematics"]
+
+for book in books:
+    print(book)
+-------------------------------------------
+books = ["Learn You a Haskell", 
+         "The Healthy Programmer",
+         "Code Complete",
+         "The Pragmatic Programmer",
+         "Pro Git",
+         "Introduction to Algorithms",
+         "Concrete Mathematics"]
+
+index = 0
+end = len(books) - 1
+
+while index <= end:
+    book = books[index]
+    print(book)
+
+    index += 1
+
+============================= Task 2 =============================
+n = input("Enter count of numbers: ")
+n = int(n)
+
+count = 1
+numbers = []
+
+while count <= n:
+    number = input("Enter number: ")
+    number = int(number)
+
+    numbers = numbers + [number]
+
+    count += 1
+
+print(numbers)
+
+=========================== Task 3 ===============================
+n = input ("Моля, въведете брой на числата: ")
+n = int(n)
+
+numbers_even = []
+start = 1
+
+while start <= n:
+    number = input("Моля, въведете число: ")
+    number = int(number)
+
+    if number % 2 == 0:
+        numbers_even = numbers_even + [number]
+
+    start += 1
+
+print("Броят на четните числа е: " + str(len(numbers_even)))
+print("Четните числа са: ")
+
+for even in numbers_even:
+    print(even)
+
+========================= Task 4 =================================
+n = input("Моля, въведете брой на числата: ")
+n = int(n)
+
+numbers = []
+start = 0
+
+
+while start < n:
+    number = input("Моля, въведете число: ")
+    number = int(number)
+    numbers = numbers + [number]
+    start += 1
+
+total = 0
+
+for number in numbers:
+    total = total + number
+
+print("Сумата на числата е: " + str(total)))
+
+============================= Task 5 ================================
+n = input("Моля, въведете брой на числата: ")
+n = int(n)
+
+numbers = []
+start = 0
+
+while start < n:
+    number = input("Моля, въведете число: ")
+    number = int(number)
+    numbers = numbers + [number]
+    start += 1
+
+max_number = numbers[0]
+
+for number in numbers:
+    if number > max_number:
+        max_number = number
+
+print("Най-голямото число е: " + str(max_number))
+
+=============================== Task 6 ==============================
+n = input("Моля, въведете брой на числата: ")
+n = int(n)
+
+numbers = []
+start = 0
+
+while start < n:
+    number = input("Моля, въведете число: ")
+    number = int(number)
+    numbers = numbers + [number]
+    start += 1
+
+min_number = numbers[0]
+
+for number in numbers:
+    if number < min_number:
+        min_number = number
+
+print("Най-малкото число е: " + str(min_number))
+
+=========================== Task 7 ================================
+n = input("Моля, въведете брой на числата: ")
+n = int(n)
+
+numbers = []
+start = 0
+
+while start < n:
+    number = input("Моля, въведете число: ")
+    number = int(number)
+    numbers = numbers + [number]
+    start += 1
+
+total = 0
+count_of_numbers = len(numbers)
+
+for number in numbers:
+    total = total + number
+
+average = total / count_of_numbers
+
+print("Средно-аритметичната стойност на въведените числа е " + str(average))
+
+=========================== Task 8 ==================================
+word = input("Моля, въведете дума: ")
+n = input("Моля, въведете число: ")
+n = int(n)
+
+start = 0
+word_list = []
+
+while start < n:
+    words = input("Моля, въведете дума: ")
+    word_list = word_list + [words]
+    start += 1
+
+counter = 0
+
+for word in word_list:
+    if word == words:
+        counter = counter + 1
+
+        
+print("Думата " + word + " се среща " + str(counter) + " пъти в списъка")
+
+=========================== Task 9 ==================================
+n = input("Моля, въведете число: ")
+n = int(n)
+
+start = 0
+names = []
+
+while start < n:
+    name = input("Моля, въведете име: ")
+    names = names + [name]
+    start += 1
+
+names = sorted(names)
+
+for name in names:
+    print(name)
+    
+    
+
 
