@@ -1,11 +1,88 @@
 =============================== Task 1 ===============================
+n = input("Моля, въведете число: ")
+n = int(n)
+
+divisors = []
+start = 1
+end = n - 1
+
+while start <= end:
+    if n % start == 0:
+        divisors = divisors + [start]
+
+    start += 1
+
+print("Делителите на " + str(n) + " са:")
+print(divisors)
 
 =============================== Task 2 ===============================
+n = input("Моля, въведете число: ")
+n = int(n)
+
+divisors = []
+start = 1
+end = n - 1
+counter = 0
+
+while start <= end:
+    if n % start == 0:
+        divisors = divisors + [start]
+    start += 1
+
+for divisor in divisors:
+    counter = counter + divisor
+
+print("Сумата на всички делители на числото е " + str(counter))
 
 =============================== Task 3 ===============================
+n = input("Моля, въведете число: ")
+n = int(n)
+
+start = 1
+end = n - 1
+divisors = []
+counter = 0
+
+while start <= end:
+    if n % start == 0:
+        divisors = divisors + [start]
+    start += 1
+
+for divisor in divisors:
+    counter = counter + divisor
+
+if counter == n:
+    print("Числото е перфектно!")
+else:
+    print("Числото не е перфектно!")
 
 =============================== Task 4 ===============================
+n = input("Моля, въведете число: ")
+n = int(n)
+
+start = n
+
+while True:
+
+    total = 0
+    divisor = 1
+
+    while divisor < start:
+        if start % divisor == 0:
+            total = total + divisor
+        divisor += 1
+
+    if total == start:
+        print(start)
+        n = n - 1
+
+    if n == 0:
+        break
+    start += 1
+    
+# С помощ от solutions
 
 =============================== Task 5 ===============================
+
 
 =============================== Task 6 ===============================
