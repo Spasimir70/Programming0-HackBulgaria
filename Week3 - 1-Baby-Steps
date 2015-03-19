@@ -1,0 +1,49 @@
+========================= Task 1 ========================
+def square(x):
+    return x ** 2
+    
+========================= Task 2 ========================
+def factorial(n):
+    result = 1
+    start = 1
+
+    while start <= n:
+        result = result * start
+        start = start + 1
+
+    return start
+    
+========================= Task 3 ========================
+def count_elements(items):
+    result = 0
+
+    for item in items:
+        result = result + 1
+
+    return result
+    
+======================== Task 4 =========================
+def member(x, xs):
+    found = False
+
+    for memb in xs:
+        if x == memb:
+            found True
+            break
+    return found
+    
+======================== Task 5 =========================
+def grades_that_pass(students, grades, limit):
+    result = []
+    index = 0
+
+    for grade in grades:
+        student = students[index]
+
+        if grade >= limit:
+            result = result + [student]
+
+        index = index + 1
+
+    return result
+    
